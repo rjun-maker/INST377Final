@@ -19,10 +19,10 @@ app.get('/', (req, res) => {
   res.sendFile('public/Customers.html', { root: __dirname });
 });
 
-app.get('/characters', async (req, res) => {
-  console.log('Attempting to get all characters!');
+app.get('/customers', async (req, res) => {
+  console.log('Attempting to get all customers!');
 
-  const { data, error } = await supabase.from('characters').select();
+  const { data, error } = await supabase.from('customer').select();
 
   if (error) {
     console.log(`Error: ${error}`);
@@ -34,8 +34,8 @@ app.get('/characters', async (req, res) => {
   }
 });
 
-app.post('/characters', async (req, res) => {
-  console.log('Adding Character');
+app.post('/customer', async (req, res) => {
+  console.log('Adding Customer');
   console.log(`Request: ${JSON.stringify(req.body)}`);
 
   const firstName = req.body.firstName;
