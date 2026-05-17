@@ -20,6 +20,3 @@ Chrome
 1. https://swiperjs.com/demos
 2. https://github.com/cheatsnake/emojihub
 3. https://p5js.org/examples/animation-and-variables-drawing-lines/
-
-
-# read
