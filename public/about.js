@@ -3,7 +3,7 @@
 
 function setup() {
   // Create the canvas
-  createCanvas(710, 400);
+  createCanvas(1400, 1000);
 
   // Set background to black
   background(0);
@@ -22,6 +22,6 @@ function mouseDragged() {
   // Set the color based on the mouse position, and draw a line
   // from the previous position to the current position
   let lineHue = mouseX - mouseY;
-  stroke(lineHue, 90, 90);
+  stroke(lineHue, 1000, 500);
   line(pmouseX, pmouseY, mouseX, mouseY);
 }

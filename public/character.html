@@ -2,6 +2,8 @@
         <head>
             <title> Character Generator Page </title>
         <link rel="stylesheet" href="Final.css">
+        <script src="character.js" defer></script>
+        <script src="index.js" defer></script>
     </head>
     <body id="characterBody">
                <!-- Navigation bar -->
@@ -17,6 +19,45 @@
         </ul>
 
     </nav>
+
+    <div id="characterDirections">
+        <h1> Directions: </h1>
+            <ol class="centered-list">
+                <li>Click the favorite emoji buttons to spawn your character
+                    top favorite emojis
+                </li>
+                <li>Add your character to the form</li>
+                <li>Get a display of your character information</li>
+            </ol> 
+    </div>
+    
+    <div id="generate">
+        <h1>Generate character </h1>
+        <h2> What is their favorite emoji to use? </h2>
+        <button class="btn" onclick="getEmoji()"> Favorite Emojis? </button>
+
+        <div id="emojiContainer"></div>
+
+    </div>
+
+    <div>
+        <h1>Our Customers!</h1>
+    <form onsubmit="createCustomer(); return false;">
+        <label for="firstName">First Name:</label>
+        <input type="text" id="firstName">
+        <br>
+        <label for="lastName">Last Name:</label>
+        <input type="text" id="lastName">
+        <br>
+        <label for="state">State:</label>
+        <input type="text" id="state">
+        <br>
+        <br>
+        <input type="submit" name="Add Customer">
+    </form>
+    </div>
+
+
 
     </body>
     <footer>
