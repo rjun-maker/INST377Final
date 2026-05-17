@@ -14,11 +14,11 @@ const supabaseUrl = process.env.SUPABASE_URL;
 const supabaseKey = process.env.SUPABASE_KEY;
 const supabase = supabaseClient.createClient(supabaseUrl, supabaseKey);
 
-app.get("/test", async (req, res) => {
-  const result = await supabase.from("customer").select("*")
+// app.get("/test", async (req, res) => {
+//   const result = await supabase.from("customer").select("*")
 
-  res.json(result);
-});
+//   res.json(result);
+// });
 
 app.listen(port, () => {
   console.log(`App is available on port: ${port}`);
