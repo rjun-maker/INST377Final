@@ -1,0 +1,74 @@
+/* HOME CSS */
+
+#homeBody {
+    background-color: #29a670;
+    
+}
+
+#mainBody {
+    background-color: whitesmoke;
+    color:#29a670;
+    border-style: outset;
+    border-width: 5px;
+    border-color: rgb(251, 188, 255);
+    padding: 50px;
+    margin: 50px;
+    text-align: center;
+    font-family: monospace;
+}
+
+.swiper {
+    width: 95%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* CHARACTER CSS */
+
+#characterBody {
+    background-color:#da28a8;
+}
+
+/* ABOUT CSS */
+
+#aboutBody {
+    background-color: #e3b92e;
+}
+
+/* Navigation CSS */ 
+
+#main-nav {
+
+    background-color: #ffc0cb;
+    color:aliceblue;
+    font-family: monospace;
+
+}
+
+#main-nav li {
+  display: inline-block;
+  font-size: 30px;
+  position: relative;
+  padding: 50px;
+}
+
+#main-nav li:hover {
+  background-color: #d47ec6;
+  color: white;
+}
+

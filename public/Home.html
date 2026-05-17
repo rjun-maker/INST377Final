@@ -1,11 +1,147 @@
 <html>
     <head>
+
+        <meta charset="utf-8" />
         <title> Home page </title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+        <!-- Link Swiper's CSS -->
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css" />
+        <link rel="stylesheet" href="Final.css">
+        <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js" defer></script>
+    
+     <!-- JS swiper library styles -->
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      background: #000;
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #fff;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #444;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+    
     </head>
 
-    <body>
+    <body id ="homeBody">
 
-        <h1> bazinga </h1>
+        <div>
+
+               <!-- Navigation bar -->
+    
+        <nav id="main-nav">
+
+            <ul>
+
+                <li> <a href="Home.html"> Home &#127804; </a> </li>
+                <li> <a href="character.html"> Character Generator &#127800;</a> </li>
+                <li> <a href="about.html"> About &#127808; </a> </li>
+
+            </ul>
+
+        </nav>
+
+        <div id = "mainBody">
+            <h1> Home Page </h1>
+                <br>
+            <h2> This is a website for people to generate different character ideas. </h2>
+                <br>
+            <h3> Click to the Character Generator tab to see the generator or look at the bottom
+                picture slider for inspiration! </h3>
+        </div>
+
+        <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+      <div class="swiper-slide"> 
+        <img src="https://i.pinimg.com/736x/95/5b/f6/955bf6e0b91f71e592d309e95e8d640b.jpg" alt="Description of image">
+        <h1> bigskycastle on tumblr </h1>
+    </div>
+      <div class="swiper-slide">
+        <img src="https://i.pinimg.com/1200x/0a/6a/6f/0a6a6fddc08e9171d8dc810a57ac2408.jpg" alt="Description of image">
+        <h1> Maruu_aru in x </h1>
+      </div>
+      <div class="swiper-slide">
+         <img src="https://i.pinimg.com/1200x/b3/c5/f4/b3c5f4458068610f7f50a02e495747e5.jpg" alt="Description of image">
+        <h1> wallaby0513 on instagram </h1>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://i.pinimg.com/736x/61/04/15/61041535df0ec2f58512afbd0159ab0d.jpg" alt="Description of image">
+        <h1> Love bullet by KOHARU </h1>
+    </div>
+      <div class="swiper-slide">
+        <img src="https://i.pinimg.com/1200x/90/06/a9/9006a9364a278d7473cef3a0386e8cb0.jpg" alt="Description of image">
+        <h1> wonbin_lee_ on X</h1>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://i.pinimg.com/1200x/23/53/5f/23535f9f75e2f8abdea54f64ea4c9709.jpg" alt="Description of image">
+        <h1> Taizo </h1>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://i.pinimg.com/1200x/4b/f2/06/4bf206667751d6d6736ad8cfeb6c4f41.jpg" alt="Description of image">
+        <h1> Napping_Marshmallow on X</h1>
+      </div>
+      <div class="swiper-slide">
+        <img src="https://i.pinimg.com/1200x/79/b5/6b/79b56b4487521820e427a57b232f2a1f.jpg" alt="Description of image">
+        <h1> kajatony on X</h1>
+      </div>
+    </div>
+    <div class="swiper-button-next"></div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-pagination"></div>
+  </div>
+
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+
+  <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper(".mySwiper", {
+      spaceBetween: 30,
+      centeredSlides: true,
+      autoplay: {
+        delay: 2500,
+        disableOnInteraction: false,
+      },
+      pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+      navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+      },
+    });
+  </script>
+        
 
     </body>
 </html>
